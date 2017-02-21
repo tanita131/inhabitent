@@ -225,59 +225,33 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'merriweather';
+  src: url("../../fonts/merriweather-bold-webfont.eot");
+  src: url("../../fonts/merriweather-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/merriweather-bold-webfont.woff") format("woff"), url("../../fonts/merriweather-bold-webfont.ttf") format("truetype"), url("../../fonts/merriweather-bold-webfont.svg#merriweatherbold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
 
 @font-face {
-    font-family: 'merriweather';
-    src: url('../../fonts/merriweather-bold-webfont.eot');
-    src: url('../../fonts/merriweather-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../../fonts/merriweather-bold-webfont.woff') format('woff'),
-         url('../../fonts/merriweather-bold-webfont.ttf') format('truetype'),
-         url('../../fonts/merriweather-bold-webfont.svg#merriweatherbold') format('svg');
-    font-weight: bold;
-    font-style: normal;
-
-}
-
-
-
+  font-family: 'merriweather';
+  src: url("../../fonts/merriweather-light-webfont.eot");
+  src: url("../../fonts/merriweather-light-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/merriweather-light-webfont.woff") format("woff"), url("../../fonts/merriweather-light-webfont.ttf") format("truetype"), url("../../fonts/merriweather-light-webfont.svg#merriweatherlight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 
 @font-face {
-    font-family: 'merriweather';
-    src: url('../../fonts/merriweather-light-webfont.eot');
-    src: url('../../fonts/merriweather-light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../../fonts/merriweather-light-webfont.woff') format('woff'),
-         url('../../fonts/merriweather-light-webfont.ttf') format('truetype'),
-         url('../../fonts/merriweather-light-webfont.svg#merriweatherlight') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
+  font-family: 'novecento';
+  src: url("../../fonts/novecentosanswide-demibold-webfont.eot");
+  src: url("../../fonts/novecentosanswide-demibold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/novecentosanswide-demibold-webfont.woff") format("woff"), url("../../fonts/novecentosanswide-demibold-webfont.ttf") format("truetype"), url("../../fonts/novecentosanswide-demibold-webfont.svg#novecentosanswide-demibold-webfont") format("svg");
+  font-weight: bold;
+  font-style: normal; }
 
 @font-face {
-    font-family: 'novecento';
-    src: url('../../fonts/novecentosanswide-demibold-webfont.eot');
-    src: url('../../fonts/novecentosanswide-demibold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../../fonts/novecentosanswide-demibold-webfont.woff') format('woff'),
-         url('../../fonts/novecentosanswide-demibold-webfont.ttf') format('truetype'),
-         url('../../fonts/novecentosanswide-demibold-webfont.svg#novecentosanswide-demibold-webfont') format('svg');
-    font-weight: bold;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'novecento';
-    src: url('../../fonts/novecentosanswide-normal-webfont.eot');
-    src: url('../../fonts/novecentosanswide-normal-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../../fonts/novecentosanswide-normal-webfont.woff') format('woff'),
-         url('../../fonts/novecentosanswide-normal-webfont.ttf') format('truetype'),
-         url('../../fonts/novecentosanswide-normal-webfont.svg#novecentosanswide-normal-webfont.') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
+  font-family: 'novecento';
+  src: url("../../fonts/novecentosanswide-normal-webfont.eot");
+  src: url("../../fonts/novecentosanswide-normal-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/novecentosanswide-normal-webfont.woff") format("woff"), url("../../fonts/novecentosanswide-normal-webfont.ttf") format("truetype"), url("../../fonts/novecentosanswide-normal-webfont.svg#novecentosanswide-normal-webfont.") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 
 /*--------------------------------------------------------------
 # Typography
@@ -479,7 +453,7 @@ a {
 .main-navigation {
   clear: both;
   display: block;
-  float: left;
+  float: right;
   width: 100%; }
   .main-navigation ul {
     display: none;
@@ -488,7 +462,7 @@ a {
     padding-left: 0; }
     .main-navigation ul ul {
       box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-      float: left;
+      float: right;
       position: absolute;
       top: 1.5rem;
       left: -999rem;
@@ -498,14 +472,14 @@ a {
         top: 0; }
       .main-navigation ul ul li:hover > ul,
       .main-navigation ul ul li.focus > ul {
-        left: 100%; }
+        right: 100%; }
       .main-navigation ul ul a {
         width: 200px; }
     .main-navigation ul li:hover > ul,
     .main-navigation ul li.focus > ul {
-      left: auto; }
+      right: auto; }
   .main-navigation li {
-    float: left;
+    float: right;
     position: relative; }
   .main-navigation a {
     display: block;
@@ -531,7 +505,7 @@ a {
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
-  float: left;
+  float: right;
   width: 50%; }
 
 .comment-navigation .nav-next,
@@ -611,6 +585,37 @@ a {
 .widget_search .search-submit {
   display: none; }
 
+.widget-area {
+  width: 27%;
+  padding-left: 3.5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  border-left: 1px solid #e1e1e1; }
+  .widget-area .widget {
+    margin: 0 0 3rem;
+    line-height: 1.75rem; }
+    .widget-area .widget h2 {
+      color: purple;
+      margin-bottom: 1.5rem; }
+    .widget-area .widget a {
+      text-decoration: none;
+      color: seagreen; }
+      .widget-area .widget a:hover {
+        color: purple; }
+    .widget-area .widget ul {
+      list-style-type: none;
+      margin-left: 0;
+      padding-left: 0; }
+    .widget-area .widget .widget-contact-text:nth-child(3) {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+      .widget-area .widget .widget-contact-text:nth-child(3) i {
+        height: 100%; }
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
@@ -621,36 +626,11 @@ a {
 .hentry {
   margin: 0 0 1.5rem; }
 
-.updated:not(.published) {
-  display: none; }
-
-.single .byline,
-.group-blog .byline {
-  display: inline; }
-
-.page-content,
-.entry-content,
-.entry-summary {
-  margin: 1.5rem 0 0; }
-
-.page-links {
-  clear: both;
-  margin: 0 0 1.5rem; }
-
-/* Asides */
-.blog .format-aside .entry-title,
-.archive .format-aside .entry-title {
-  display: none; }
-
-/* Comments */
-.comment-content a {
-  word-wrap: break-word; }
-
-.bypostauthor {
-  display: block; }
-
-.site-description {
-  color: purple; }
+.content-area {
+  width: 800px;
+  margin-left: 70px;
+  padding-top: 80px;
+  border-right: 1px solid #e1e1e1; }
 
 /*--------------------------------------------------------------
 # Media
@@ -715,4 +695,74 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+/* Front page */
+.site-footer {
+  width: 100%;
+  height: auto;
+  background: url(../../images/dark-wood@2x.png);
+  padding: 2rem; }
 
+.site-info {
+  padding: 2% 0;
+  width: 1120px;
+  margin: auto auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  .site-info h3 {
+    color: #d99054;
+    font-size: 1.2rem; }
+  .site-info p {
+    color: white; }
+  .site-info .contact {
+    line-height: 1;
+    -ms-flex: 20% 0 0px;
+        flex: 20% 0 0; }
+    .site-info .contact a {
+      color: white;
+      font-family: 'merriweather', serif;
+      text-transform: lowercase; }
+      .site-info .contact a:hover {
+        text-decoration: underline; }
+    .site-info .contact .phone {
+      margin-bottom: .5em; }
+      .site-info .contact .phone a {
+        font-size: 1.2rem; }
+    .site-info .contact .fa {
+      padding: 0 1%; }
+  .site-info .social {
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 75px; }
+    .site-info .social p {
+      padding: 0 1%; }
+    .site-info .social .fa {
+      font-size: 1.2rem;
+      margin-right: 5px; }
+  .site-info .business-hours {
+    line-height: 1;
+    -ms-flex: 22% 0 0px;
+        flex: 22% 0 0; }
+    .site-info .business-hours span {
+      font-weight: bold; }
+  .site-info .footer-logo {
+    -ms-flex: 40% 0 0px;
+        flex: 40% 0 0; }
+    .site-info .footer-logo img {
+      width: 60%;
+      margin-top: 5%;
+      margin-left: 40%; }
+
+.site-info {
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  margin-top: 2rem; }
+
+.main-picture {
+  height: 100vh;
+  background: url("../../images/logos/inhabitent-logo-full.svg") no-repeat center, linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("../../images/home-hero.jpg") no-repeat center top;
+  background-size: 280px, cover, 100%; }
