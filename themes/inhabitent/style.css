@@ -453,8 +453,10 @@ a {
 .main-navigation {
   clear: both;
   display: block;
-  float: right;
-  width: 100%; }
+  float: left;
+  width: 100%;
+  -ms-flex-order: 1;
+      order: 1; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -462,7 +464,7 @@ a {
     padding-left: 0; }
     .main-navigation ul ul {
       box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-      float: right;
+      float: left;
       position: absolute;
       top: 1.5rem;
       left: -999rem;
@@ -477,9 +479,9 @@ a {
         width: 200px; }
     .main-navigation ul li:hover > ul,
     .main-navigation ul li.focus > ul {
-      right: auto; }
+      left: auto; }
   .main-navigation li {
-    float: right;
+    float: left;
     position: relative; }
   .main-navigation a {
     display: block;
@@ -505,7 +507,7 @@ a {
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
-  float: right;
+  float: left;
   width: 50%; }
 
 .comment-navigation .nav-next,
@@ -514,6 +516,37 @@ a {
   float: right;
   text-align: right;
   width: 50%; }
+
+.hfeed.site {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.main-navigation {
+  position: fixed;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 3;
+  background-color: rgba(255, 255, 255, 0.85);
+  transition: background .5s ease-in-out;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  border-bottom: 1px solid #e1e1e1;
+  padding-left: 65rem;
+  padding-right: 5rem;
+  height: 50px;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.header-logo {
+  width: 50px;
+  height: 33px; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -586,35 +619,17 @@ a {
   display: none; }
 
 .widget-area {
-  width: 27%;
-  padding-left: 3.5rem;
+  width: 32%;
   padding-top: 3rem;
-  padding-bottom: 3rem;
-  border-left: 1px solid #e1e1e1; }
-  .widget-area .widget {
-    margin: 0 0 3rem;
-    line-height: 1.75rem; }
-    .widget-area .widget h2 {
-      color: purple;
-      margin-bottom: 1.5rem; }
-    .widget-area .widget a {
-      text-decoration: none;
-      color: seagreen; }
-      .widget-area .widget a:hover {
-        color: purple; }
-    .widget-area .widget ul {
-      list-style-type: none;
-      margin-left: 0;
-      padding-left: 0; }
-    .widget-area .widget .widget-contact-text:nth-child(3) {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-      -ms-flex-align: start;
-          align-items: flex-start; }
-      .widget-area .widget .widget-contact-text:nth-child(3) i {
-        height: 100%; }
+  padding-right: 5rem;
+  padding-left: 5rem; }
+  .widget-area a {
+    text-decoration: none;
+    color: #248A83; }
+  .widget-area .day {
+    font-weight: bold; }
+  .widget-area i {
+    padding-right: 0.5rem; }
 
 /*--------------------------------------------------------------
 # Content
@@ -625,12 +640,6 @@ a {
 
 .hentry {
   margin: 0 0 1.5rem; }
-
-.content-area {
-  width: 800px;
-  margin-left: 70px;
-  padding-top: 80px;
-  border-right: 1px solid #e1e1e1; }
 
 /*--------------------------------------------------------------
 # Media
@@ -696,6 +705,27 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.header-container {
+  position: fixed;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  border-bottom: 1px solid lightgrey;
+  width: 100%; }
+
+.logo {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  width: 50px;
+  margin-left: 10px; }
+
+.main-navigation li {
+  margin-right: 40px; }
+
+.nav-div {
+  width: 55%; }
+
 .site-footer {
   width: 100%;
   height: auto;
@@ -766,3 +796,12 @@ object {
   height: 100vh;
   background: url("../../images/logos/inhabitent-logo-full.svg") no-repeat center, linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("../../images/home-hero.jpg") no-repeat center top;
   background-size: 280px, cover, 100%; }
+
+.site-header {
+  z-index: 1;
+  position: absolute;
+  width: 100%; }
+
+.header-logo img {
+  width: 50px;
+  height: 33 px; }
