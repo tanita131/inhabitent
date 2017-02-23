@@ -6,7 +6,7 @@
  */
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-front-page">
 		<main id="main" class="site-main" role="main">
 
 		<div class="main-picture">

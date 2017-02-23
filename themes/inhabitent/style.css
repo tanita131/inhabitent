@@ -538,15 +538,11 @@ a {
       flex-wrap: wrap;
   width: 100%;
   border-bottom: 1px solid #e1e1e1;
-  padding-left: 65rem;
+  padding-left: 60rem;
   padding-right: 5rem;
   height: 50px;
   -ms-flex-align: center;
       align-items: center; }
-
-.header-logo {
-  width: 50px;
-  height: 33px; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -641,6 +637,14 @@ a {
 .hentry {
   margin: 0 0 1.5rem; }
 
+.content-area {
+  width: 68%;
+  border-right: 1px solid #e1e1e1; }
+
+.content-wraper {
+  display: -ms-flexbox;
+  display: flex; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -721,10 +725,16 @@ object {
   margin-left: 10px; }
 
 .main-navigation li {
-  margin-right: 40px; }
+  margin-right: 30px;
+  color: white; }
 
 .nav-div {
   width: 55%; }
+
+.about-image {
+  background-color: red;
+  width: 100%;
+  height: auto; }
 
 .site-footer {
   width: 100%;
