@@ -12,15 +12,19 @@
 	margin: 0 0 $base__space-unit;
 }
 
-
+.site-content{
+	display:flex;
+	flex: wrap;
+}
 
 
 .content-area {
 	width: 68%;
- border-right: 1px solid #e1e1e1;}
+    border-right: 1px solid #e1e1e1;}
 //	padding-top: 3rem;
 //	padding-right: 3.5rem;
 //
+
 
 
 .content-about {}
@@ -35,6 +39,12 @@
 .content-archive-products{
 
 }
-.content-wraper{
+.content-products{
+
+}
+.content-archives{
+	
+}
+.content-wrapper{
 	display:flex;
 }

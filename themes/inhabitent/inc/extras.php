@@ -62,4 +62,26 @@ add_action( 'wp_enqueue_scripts', 'inhabitent_about_css' );
 
 
 
+function inhabitent_title_function(){
+	$title = 'SHOP STUFF';
+	return $title;
+}
+add_filter( 'get_the_archive_title', 'inhabitent_title_function');
+
+
+ 
+
+
+
+function blog_change_sort( $query ) {
+  
+    
+    if( is_post_type_archive('products') ) {
+        $query->set('posts_per_page',16);
+        $query->set('orderby', 'title');
+        $query->set('order', 'ASC');
+    }
+}
+add_action('pre_get_posts', 'blog_change_sort');
+?>
 

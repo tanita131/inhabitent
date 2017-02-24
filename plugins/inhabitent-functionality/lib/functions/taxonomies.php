@@ -39,7 +39,7 @@ function inhabitent_tax_product_type() {
 		'show_in_nav_menus'          => true,
 		'show_tagcloud'              => true,
 	);
-	register_taxonomy( 'procust_type', array( 'products' ), $args );
+	register_taxonomy( 'product_type', array( 'products' ), $args );
 
 }
 add_action( 'init', 'inhabitent_tax_product_type', 0 );

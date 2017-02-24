@@ -13,10 +13,35 @@ get_header(); ?>
 			<h3>test</h3>
 		</div>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+	
+
+  <div class="shopstuff-container">
+    <?php    
+        $terms = get_terms( array(
+          'taxonomy' => 'product_type',
+		      'orderby'=> 'name',
+
+		      'hide_empty'=> 'false'
+           ));
+        foreach ($terms as $term) :
+          $url = get_term_link( $term->slug , 'product_type');              
+    ?>  
+      <div class="shop-stuff-item">
+          <div class="product-icon-image">       
+              <img src="<?php echo get_template_directory_uri();?>/images/product-type-icons/<?php echo $term->slug; ?>.svg" alt="">
+          </div>
+          <p><?php echo $term->description; ?></p>
+          <button class="categ-button"><a href='<?php echo $url?>' class='button-link'><?php echo $term->name; ?></a></button> 
+	</div>
+                        
+    <?php endforeach; ?>
+</div>
+
+
+
+
 <section class= "news-feed">
- <div class="container">
+ 
  <h2>Inhabitent Journal</h2>	
 <?php
        $args = array( 'post_type' => 'post', 'order' => 'DSC', 'numberposts' => 3 );
@@ -28,5 +53,7 @@ get_header(); ?>
             <?php endforeach; wp_reset_postdata(); ?>
 
 	</section>
+  	</main><!-- #main -->
+	</div><!-- #primary -->
 
 <?php get_footer(); ?>
