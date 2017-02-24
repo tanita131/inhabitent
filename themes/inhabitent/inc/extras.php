@@ -37,11 +37,13 @@ function my_login_logo() { ?>
 <?php }
 add_action( 'login_head', 'my_login_logo' );
 
+
+
 function inhabitent_about_css() {
-if (!is_page_template('page-templates/about.php')) {
+if (!is_page_template('pages-templates/about.php')) {
     return;
 }
-    $image = CFS()->get('about_hero_image');
+    $image = CFS()->get('about_header_image');
 
     if(!$image) {
         return;
@@ -52,6 +54,8 @@ if (!is_page_template('page-templates/about.php')) {
                 linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ),
                 url({$image}) no-repeat center bottom;
             background-size: cover, cover;
+            height: 100vh;
+            width:370vh;
     }";
 
     wp_add_inline_style( 'red-starter-style', $hero_css );

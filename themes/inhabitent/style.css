@@ -262,7 +262,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: "merriweather", sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -737,11 +737,6 @@ object {
 .nav-div {
   width: 55%; }
 
-.about-image {
-  background-color: red;
-  width: 100%;
-  height: auto; }
-
 .shopstuff-container {
   margin: 0 auto;
   width: 65%;
@@ -760,11 +755,6 @@ object {
   width: 80%;
   display: -ms-flexbox;
   display: flex; }
-  .news-feed article:nth-child(2) {
-    border-right: 10; }
-  .news-feed article:nth-child(3) {
-    border-right: 10;
-    border-left: 1rem solid white; }
   .news-feed article {
     width: 33.333%;
     border-right: 1rem solid white; }
@@ -901,7 +891,7 @@ object {
     .single_product_wrapper .entry-content .single_product_content {
       font-family: 'merriweather'; }
 
-.about_hero {
+.about-hero {
   width: 100vw;
   height: 100vh;
   display: -ms-flexbox;
@@ -910,24 +900,45 @@ object {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  color: #fff;
+  color: white;
   text-transform: uppercase;
   font-size: 2rem;
-  font-family: 'novecento'; }
+  font-family: 'novecento';
+  text-align: center; }
+  .about-hero h2 {
+    -ms-flex-pack: center;
+        justify-content: center;
+    margin-top: 22%;
+    font-size: 53px; }
 
-.about_content_wrapper {
-  width: 75%;
+.about-container {
+  width: 55%;
   margin: 0 auto;
   margin-bottom: 100px; }
-  .about_content_wrapper h1 {
+  .about-container h2 {
     text-align: center;
     font-family: 'novecento';
     text-transform: uppercase;
     font-size: 2.5rem;
-    color: #000; }
-  .about_content_wrapper p {
-    font-family: 'merriweather';
+    color: black; }
+  .about-container p {
+    font-family: 'merriweather', sans-serif;
     line-height: 2rem; }
+
+.content-find {
+  width: 70%;
+  margin-top: 150px;
+  margin-right: 30px;
+  padding-left: 5%; }
+  .content-find p {
+    font-family: 'merriweather', sans-serif; }
+
+.find-header img {
+  width: 100%; }
+
+.post_top_wrap {
+  position: relative;
+  padding: 5%; }
 
 .site-footer {
   width: 100%;
