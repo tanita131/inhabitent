@@ -1,3 +1,9 @@
+
+
+
+
+
+
 === RED Starter Theme ===
 
 Contributors: automattic
