@@ -4,33 +4,36 @@
 
 .widget {
 	margin: 0 0 $base__space-unit;
-
 	/* Make sure select elements fit in widgets. */
 	select {
 		max-width: 100%;
 	}
 }
 
+
 /* Search widget. */
+
 .widget_search .search-submit {
 	display: none;
 }
+
 .widget-area {
 	width: 32%;
 	padding-top: 7rem;
 	padding-right: 5rem;
 	padding-left: 5rem;
-	a{
+	a {
 		text-decoration: none;
 		color: #248A83;
 	}
-	.day{
+	.day {
 		font-weight: bold;
 	}
 	i {
 		padding-right: 0.5rem;
 	}
 }
-.widget-title{
+
+.widget-title {
 	text-transform: uppercase;
 }

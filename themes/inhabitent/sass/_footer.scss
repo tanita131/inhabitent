@@ -1,91 +1,76 @@
-
 .site-footer {
     width: 100%;
     height: auto;
     background: url(../../images/dark-wood@2x.png);
     padding: 2rem;
-    
     h2 {
-        color:#d99054 ;
+        color: #d99054;
         font-size: 1.2rem;
         text-transform: uppercase;
         font-family: 'novecento', sans-serif;
-        
     }
-
 }
 
-.site-info{
+.site-info {
     padding: 2% 0;
     width: 1120px;
     margin: auto auto;
     display: flex;
     justify-content: space-between;
     color: white;
-    }
-    
+}
 
-    .contact {
-        line-height: 1;
-        flex: 20% 0 0;
-
-        a {
-            color: white;
-            font-family: 'merriweather', serif;
-            text-transform: lowercase;
-            font-size: 20px;
-
+.contact {
+    line-height: 1;
+    flex: 20% 0 0;
+    a {
+        color: white;
+        font-family: 'merriweather', serif;
+        text-transform: lowercase;
+        font-size: 20px;
         &:hover {
             text-decoration: underline;
         }
-        }
-        
-        .phone {
-            margin-bottom: .5em;
-            a {
+    }
+    .phone {
+        margin-bottom: .5em;
+        a {
             font-size: 1.2rem;
-            }
-        }
-
-        .fa {
-            padding: 0 1%;
         }
     }
-
-    .social {
-            display: flex;
-            margin-left: 5px;
-
-            p {
-                padding: 0 1%;
-            }
-
-            .fa {
-                font-size: 1.2rem;
-                margin-right: 5px;
-            }
-        }
-
-    .business-hours {
-        line-height: 1;
-        flex: 22% 0 0;
-
-        span {
-            font-weight: bold;
-        }
-        p{
-            font-family: 'merriweather', sans-serif;
-        }
+    .fa {
+        padding: 0 1%;
     }
-    .footer-logo {
-        flex: 40% 0 0;
-        
-        img {
-            width: 60%;
-            margin-top: 5%;
-            margin-left: 40%;
-        }
-        
-    }
-    
+}
 
+.social {
+    display: flex;
+    margin-left: 5px;
+    p {
+        padding: 0 1%;
+    }
+    .fa {
+        font-size: 1.2rem;
+        margin-right: 5px;
+    }
+}
+
+.business-hours {
+    line-height: 1;
+    flex: 22% 0 0;
+    span {
+        font-weight: bold;
+    }
+    p {
+        font-family: 'merriweather', sans-serif;
+    }
+}
+
+.footer-logo {
+    flex: 40% 0 0;
+    img {
+        width: 60%;
+        margin-top: 5%;
+        margin-left: 40%;
+    }
+}
