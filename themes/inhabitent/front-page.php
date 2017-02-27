@@ -15,7 +15,9 @@ get_header(); ?>
 
 	
 
-  <div class="shopstuff-container">
+  <section class="shop-stuff-container">
+      <h2>Shop stuff</h2>
+      <div class="shop-stuff">
     <?php    
         $terms = get_terms( array(
           'taxonomy' => 'product_type',
@@ -32,17 +34,20 @@ get_header(); ?>
           </div>
           <p><?php echo $term->description; ?></p>
           <button class="categ-button"><a href='<?php echo $url?>' class='button-link'><?php echo $term->name; ?></a></button> 
-	</div>
+	  </div>
                         
     <?php endforeach; ?>
-</div>
+    </div><!--shop stuff -->
+</section><!--shop stuff-container -->
 
 
 
 
-<section class= "news-feed">
+
+ <h2>inhabitent journal</h2>
+	<section class= "news-feed">
  
- <h2>Inhabitent Journal</h2>	
+
 <?php
        $args = array( 'post_type' => 'post', 'order' => 'DSC', 'numberposts' => 3 );
        $product_posts = get_posts( $args ); // returns an array of posts
