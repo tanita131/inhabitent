@@ -14,7 +14,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="profile" href="http://gmpg.org/xfn/11">
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-		<script src="https://use.fontawesome.com/df17f0522f.js"></script>
+		<!--<script src="https://use.fontawesome.com/df17f0522f.js"></script>-->
 		<?php wp_head(); ?>
 	</head>
 
@@ -25,17 +25,12 @@
 			</a>
 			<header id="masthead" class="site-header" role="banner">
 				<div class="site-branding">
-
-
-
-					<nav id="site-navigation" class="main-navigation" role="navigation">
+                    <nav id="site-navigation" class="main-navigation" role="navigation">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 					<img src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-tent.svg'; ?>" class="logo" alt="Inhabitent company logo"/>
                    		</a>
 						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-
-
 
 						<h1 class="site-title screen-reader-text">
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
@@ -44,8 +39,6 @@
 						</h1>
 					</nav>
 					<!-- #site-navigation -->
-
-
 			</header>
 			<!-- #masthead -->
 

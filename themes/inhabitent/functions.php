@@ -112,3 +112,11 @@ function my_login_logo_url_title() {
     return 'Inhabitent';
 }
 add_filter( 'login_headertitle', 'my_login_logo_url_title' );
+
+// Load Font Awesome
+add_action( 'wp_enqueue_scripts', 'enqueue_font_awesome' );
+function enqueue_font_awesome() {
+
+	wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css' );
+
+}

@@ -864,7 +864,7 @@ object {
   padding-right: 3rem; }
   .product_sub_catagories a {
     color: #248A83;
-    font-family: 'novecento',sans-serif;
+    font-family: 'novecento', sans-serif;
     font-weight: 400;
     text-decoration: none;
     text-transform: uppercase; }
@@ -960,10 +960,12 @@ object {
   position: relative;
   padding: 5%; }
 
-.blog .site-main, .page-id-40 .site-main {
+.blog .site-main,
+.page-id-40 .site-main {
   margin-left: 20%; }
 
-.blog p, .page-id-40 p {
+.blog p,
+.page-id-40 p {
   width: 95%;
   font-size: 18px; }
 
@@ -979,7 +981,8 @@ object {
     padding: 20px;
     color: white; }
 
-.blog .content-area, .page-id-40 .content-area {
+.blog .content-area,
+.page-id-40 .content-area {
   padding-top: 7rem; }
 
 .page-id-40 iframe {
@@ -1090,7 +1093,8 @@ object {
 .site-header {
   z-index: 1;
   position: absolute;
-  width: 100%; }
+  width: 100%;
+  text-transform: uppercase; }
 
 .header-logo img {
   width: 50px;

@@ -37,8 +37,6 @@ function my_login_logo() { ?>
 <?php }
 add_action( 'login_head', 'my_login_logo' );
 
-
-
 function inhabitent_about_css() {
 if (!is_page_template('pages-templates/about.php')) {
     return;
@@ -71,11 +69,6 @@ function inhabitent_title_function(){
 	return $title;
 }
 add_filter( 'get_the_archive_title', 'inhabitent_title_function');
-
-
- 
-
-
 
 function blog_change_sort( $query ) {
   

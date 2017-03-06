@@ -13,8 +13,6 @@ get_header(); ?>
                 <h3>test</h3>
             </div>
 
-
-
             <section class="shop-stuff-container">
                 <h2>Shop stuff</h2>
                 <div class="shop-stuff">
@@ -48,7 +46,7 @@ get_header(); ?>
 
 
 
-            <h2>inhabitent journal</h2>
+            <h2>Inhabitent journal</h2>
             <section class="news-feed">
 
 
