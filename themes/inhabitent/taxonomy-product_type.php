@@ -11,13 +11,16 @@ get_header(); ?>
 			<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
+				
+			<?php $term = get_queried_object(); ?>
+				<h1 class="page-title">
+					<?php echo $term -> name; ?>
+				</h1>
+					<!--the_archive_title( '<h1 class="page-title">', '</h1>' );-->
+				<?php	the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 			</header>
 			<!-- .page-header -->
-
 
 			<article class=i d="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 

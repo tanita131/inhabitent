@@ -63,15 +63,13 @@
 
 	<?php wp_footer(); ?>
 <script type="text/javascript">
+$('.search-field').hide()
       $('#site-navigation .fa-search').click(function(e){
-          e.preventDefault();
-          e.stopPropagation();
-          $('#site-navigation .search-form label').toggle(400);
-          $('#site-navigation .search-form input[type="search"]').focus()
+          $('.search-field').show()
+          $('#site-navigation .search-field label').toggle(300);
+          $('#site-navigation .search-field input[type="search"]').focus()
       });
-      $(window).load(function(){
-        $(window).scroll();
-      });
+   
     </script>
 	</body>
 

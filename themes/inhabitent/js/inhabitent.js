@@ -1,6 +1,6 @@
 
 
-// (function(jQuery){
+
 //  jQuery('.search-field').hide();
 
 // jQuery('.search-submit').click(function(){
@@ -8,4 +8,6 @@
 //   jQuery('.search-field').toggle('slow');
 
 // });
-// })(jQuery);
+
+
+     

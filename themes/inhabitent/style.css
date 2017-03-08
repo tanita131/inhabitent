@@ -228,14 +228,14 @@ th {
 @font-face {
   font-family: 'merriweather';
   src: url("../../fonts/merriweather-bold-webfont.eot");
-  src: url("../../fonts/merriweather-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/merriweather-bold-webfont.woff") format("woff"), url("../../fonts/merriweather-bold-webfont.ttf") format("truetype"), url("../../fonts/merriweather-bold-webfont.svg#merriweatherbold") format("svg");
+  src: url("../../fonts/merriweather-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/merriweather-bold-webfont.ttf") format("truetype"), url("../../fonts/merriweather-bold-webfont.svg#merriweatherbold") format("svg");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: 'merriweather';
   src: url("../../fonts/merriweather-light-webfont.eot");
-  src: url("../../fonts/merriweather-light-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/merriweather-light-webfont.woff") format("woff"), url("../../fonts/merriweather-light-webfont.ttf") format("truetype"), url("../../fonts/merriweather-light-webfont.svg#merriweatherlight") format("svg");
+  src: url("../../fonts/merriweather-light-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/merriweather-light-webfont.svg#merriweatherlight") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -543,10 +543,10 @@ a {
   -ms-flex-align: center;
       align-items: center; }
   .main-navigation a {
-    color: white; }
+    color: #248A83; }
 
 .menu-main-menu-container {
-  margin-left: 47%; }
+  margin-left: 54%; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -980,7 +980,7 @@ object {
   position: relative; }
   .blog .entry-header img, .single-format-standard .entry-header img {
     width: 95%; }
-  .blog .entry-header h1, .single-format-standard .entry-header h1 {
+  .blog .entry-header h2, .single-format-standard .entry-header h2 {
     position: absolute;
     top: 0;
     left: 0;
@@ -988,6 +988,8 @@ object {
     padding: 20px;
     color: white;
     text-transform: uppercase; }
+  .blog .entry-header a, .single-format-standard .entry-header a {
+    color: white; }
 
 .blog .content-area, .single-format-standard .content-area, .debug-bar-maximized .content-area,
 .page-id-40 .content-area {
@@ -1062,27 +1064,36 @@ object {
   font-family: 'novecento', sans-serif;
   letter-spacing: 2px; }
 
-.debug-bar-maximized h1 {
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 45px; }
-
-.debug-bar-maximized h2 {
-  text-transform: uppercase;
-  font-family: 'novecento', sans-serif;
-  letter-spacing: 2px;
-  font-size: 35px;
-  padding-top: 40px; }
-  .debug-bar-maximized h2 a {
-    text-decoration: none;
+.search-content {
+  width: 60%;
+  margin-top: 150px;
+  margin-right: 30px;
+  padding-left: 5%;
+  margin-left: 7%; }
+  .search-content p {
+    font-family: 'novecento', sans-serif;
     letter-spacing: 2px; }
-
-.debug-bar-maximized p {
-  font-size: 20px; }
-
-.debug-bar-maximized .entry-meta {
-  font-family: 'novecento', sans-serif;
-  font-size: 20px; }
+  .search-content h1 {
+    font-size: 45px;
+    text-transform: uppercase; }
+  .search-content h1 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 45px; }
+  .search-content h2 {
+    text-transform: uppercase;
+    font-family: 'novecento', sans-serif;
+    letter-spacing: 2px;
+    font-size: 35px;
+    padding-top: 40px; }
+    .search-content h2 a {
+      text-decoration: none;
+      letter-spacing: 2px; }
+  .search-content p {
+    font-size: 17px; }
+  .search-content .entry-meta {
+    font-family: 'novecento', sans-serif;
+    font-size: 20px; }
 
 .content-404 {
   width: 70%;
@@ -1131,6 +1142,9 @@ object {
     outline: 0; }
   .search-form .fa-search {
     font-size: 1rem; }
+
+.content-taxonomy .content-area {
+  width: 100%; }
 
 .site-footer {
   width: 100%;
