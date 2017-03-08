@@ -32,8 +32,18 @@
 	i {
 		padding-right: 0.5rem;
 	}
+	li{
+		list-style:none;
+       }
+	   ul{
+		    padding-left:0px;
+		margin-left:0px;
+	   }
+
+
 }
 
 .widget-title {
 	text-transform: uppercase;
+	
 }

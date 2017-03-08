@@ -11,7 +11,7 @@
  * @param array $classes Classes for the body element.
  * @return array
  */
-function red_starter_body_classes( $classes ) {
+function inhabitent_body_classes( $classes ) {
 	// Adds a class of group-blog to blogs with more than 1 published author.
 	if ( is_multi_author() ) {
 		$classes[] = 'group-blog';
@@ -19,9 +19,9 @@ function red_starter_body_classes( $classes ) {
 
 	return $classes;
 }
-add_filter( 'body_class', 'red_starter_body_classes' );
+add_filter( 'body_class', 'inhabitent_body_classes' );
 
-function my_login_logo() { ?>
+function inhabitent_login_logo() { ?>
     <style type="text/css">
         #login h1 a, .login h1 a {
             background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-text-dark.svg);
@@ -35,7 +35,7 @@ function my_login_logo() { ?>
         }
     </style>
 <?php }
-add_action( 'login_head', 'my_login_logo' );
+add_action( 'login_head', 'inhabitent_login_logo' );
 
 function inhabitent_about_css() {
 if (!is_page_template('pages-templates/about.php')) {
@@ -63,12 +63,15 @@ if (!is_page_template('pages-templates/about.php')) {
 add_action( 'wp_enqueue_scripts', 'inhabitent_about_css' );
 
 
-
-function inhabitent_title_function(){
-	$title = 'SHOP STUFF';
-	return $title;
+// write if statment using 
+if(is_post_type_archive('products')){
+    function inhabitent_title_function(){
+        $title = 'SHOP STUFF';
+        return $title;
+    }
+    add_filter( 'get_the_archive_title', 'inhabitent_title_function');
 }
-add_filter( 'get_the_archive_title', 'inhabitent_title_function');
+
 
 function blog_change_sort( $query ) {
   
@@ -80,5 +83,16 @@ function blog_change_sort( $query ) {
     }
 }
 add_action('pre_get_posts', 'blog_change_sort');
-?>
+
+function inhabitent_login_logo_url() {
+    return home_url();
+}
+add_filter( 'login_headerurl', 'inhabitent_login_logo_url' );
+
+function inhabitent_login_logo_url_title() {
+    return 'Inhabitent';
+}
+add_filter( 'login_headertitle', 'inhabitent_login_logo_url_title' );
+
+
 

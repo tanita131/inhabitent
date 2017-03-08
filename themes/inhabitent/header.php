@@ -37,6 +37,7 @@
 								<?php bloginfo( 'name' ); ?>
 							</a>
 						</h1>
+						<?php get_search_form(); ?>
 					</nav>
 					<!-- #site-navigation -->
 			</header>

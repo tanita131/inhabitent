@@ -276,7 +276,7 @@
   padding: 5%;
 }
 
-.blog,
+.blog, .single-format-standard,.debug-bar-maximized,
 .page-id-40 {
   .site-main {
     margin-left: 20%;
@@ -284,10 +284,11 @@
   p {
     width: 95%;
     font-size: 18px;
+    font-family: 'merriweather', sans-serif;
   }
 }
 
-.blog {
+.blog, .single-format-standard  {
   .entry-header {
     position: relative;
     img {
@@ -300,12 +301,13 @@
       background-color: #248A83;
       padding: 20px;
       color: white;
+      text-transform: uppercase;
     }
   }
 }
 
 //journal and find us
-.blog,
+.blog,.single-format-standard,.debug-bar-maximized,
 .page-id-40 {
   .content-area {
     padding-top: 7rem;
@@ -332,7 +334,7 @@
   }
 }
 
-.blog {
+.blog, .single-format-standard {
   .entry-meta {
     font-family: 'novecento', sans-serif;
     position: absolute;
@@ -352,6 +354,121 @@
       padding-left: 5px;
     }
   }
+  h1{
+     font-family: 'novecento', sans-serif;
+     font-size: 35px;
+     max-width: 75%;
+
+  }
+  textarea{
+    background:#f4f4f4 ;
+  }
+ .comments-title{
+   font-size: 40px;
+   font-family: 'novecento', sans-serif;
+   letter-spacing: 2px;
+ }
+ .fn{
+   font-size:20px;
+   font-style: normal;
+   font-weight: 600;
+ }
+ .comment-metadata{
+   color:gray;
+   font-size: 18px;
+ }
+ .reply{
+   font-size:20px;
+ }
+ a{
+   text-decoration: none;
+ }
+ .comment-reply-title{
+   font-size: 33px;
+   text-transform: uppercase;
+   font-family: 'novecento', sans-serif;
+   letter-spacing: 2px;
+ }
+}
+///////search///
+.debug-bar-maximized{
+  h1{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 45px;
+  
+  }
+  h2{
+    text-transform: uppercase;
+    font-family: 'novecento', sans-serif;
+    letter-spacing: 2px;
+    font-size: 35px;
+    padding-top: 40px;
+    a{
+      text-decoration: none;
+      letter-spacing: 2px;
+    }
+    }
+    p{
+      font-size: 20px;
+    }
+    .entry-meta{
+      font-family: 'novecento', sans-serif;
+      font-size: 20px;
+    }
 }
 
-////////
+////////404//
+.content-404 {
+  width: 70%;
+  margin-top: 150px;
+  margin-right: 30px;
+  padding-left: 5%;
+  p {
+    font-family: 'novecento', sans-serif;
+    font-size:20px;
+    letter-spacing: 2px;
+  }
+  h1{
+    font-size:45px;
+    text-transform: uppercase;
+    margin-left: 14%;
+  }
+  .page-content{
+    margin-left: 14%;
+  }
+ h2{
+   text-transform: uppercase;
+     font-family: 'novecento', sans-serif;
+     letter-spacing: 2px;
+ }
+ a{
+   text-decoration: none;
+  
+   }
+
+  li{
+    list-style: none;
+  
+    }
+
+    ul{
+        margin:0;
+    padding: 0;
+    line-height: 1.75;
+    font-size: 19px;
+    }
+    fieldset{
+      border:none;
+    }
+   
+  
+}
+
+
+
+//.widget-area {
+///  position: relative;
+ // padding: 5%;
+//}
+
