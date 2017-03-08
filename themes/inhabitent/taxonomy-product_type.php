@@ -7,26 +7,20 @@
 get_header(); ?>
 	<div class="content-taxonomy">
 		<div id="primary" class="content-area">
-
 			<?php if ( have_posts() ) : ?>
-
 			<header class="page-header">
-				
-			<?php $term = get_queried_object(); ?>
+				<?php $term = get_queried_object(); ?>
 				<h1 class="page-title">
 					<?php echo $term -> name; ?>
 				</h1>
-					<!--the_archive_title( '<h1 class="page-title">', '</h1>' );-->
+				<!--the_archive_title( '<h1 class="page-title">', '</h1>' );-->
 				<?php	the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 			</header>
 			<!-- .page-header -->
-
 			<article class=i d="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
 				<div class="archive-area">
 					<?php while ( have_posts() ) : the_post(); ?>
-
 					<div class="product-post">
 						<div class="product-thumbnail">
 							<a href="<?php the_permalink() ; ?> ">

@@ -30,7 +30,6 @@
 
 //shop stuff
 .shop-stuff-container {
-  //height: 50vh;
   width: 75%;
   margin: 7% auto 0 auto;
   margin-bottom: 100px;
@@ -41,7 +40,7 @@
     .shop-stuff-item {
       width: 23.5%;
       flex: 23.5% 0 0;
-      padding: 2.2rem;
+      padding: 1.9rem;
       border-color: #e1e1e1;
       border-style: solid;
       border-width: 5px 2px 2px 2px;
@@ -276,20 +275,20 @@
   padding: 5%;
 }
 
-
-.blog, .single-format-standard,.debug-bar-maximized,
+.blog,
+.single-format-standard,
+.debug-bar-maximized,
 .page-id-40 {
-  .site-main {
-   // margin-left: 20%;
-  }
+  .site-main {}
   p {
-    width: 95%;
+    width: 100;
     font-size: 18px;
     font-family: 'merriweather', sans-serif;
   }
 }
 
-.blog, .single-format-standard  {
+.blog,
+.single-format-standard {
   .entry-header {
     position: relative;
     img {
@@ -304,20 +303,26 @@
       color: white;
       text-transform: uppercase;
     }
-    a{
-      color:white;
+    a {
+      color: white;
+    }
+  }
+  .nav-next,
+  .nav-previous {
+    a {
+      display: none;
     }
   }
 }
 
 //journal and find us
-.blog,.single-format-standard,.debug-bar-maximized,
+.blog,
+.single-format-standard,
+.debug-bar-maximized,
 .page-id-40 {
   .content-area {
     padding-top: 7rem;
-    margin-left:15%;
-  //  width: 70%;
-    //margin-right: 5%;
+    margin-left: 15%;
   }
 }
 
@@ -341,7 +346,8 @@
   }
 }
 
-.blog, .single-format-standard {
+.blog,
+.single-format-standard {
   .entry-meta {
     font-family: 'novecento', sans-serif;
     position: absolute;
@@ -361,86 +367,79 @@
       padding-left: 5px;
     }
   }
-  h1{
-     font-family: 'novecento', sans-serif;
-     font-size: 35px;
-     max-width: 75%;
-
+  h1 {
+    font-family: 'novecento', sans-serif;
+    font-size: 35px;
+    max-width: 75%;
   }
-  textarea{
-    background:#f4f4f4 ;
+  textarea {
+    background: #f4f4f4;
   }
- .comments-title{
-   font-size: 40px;
-   font-family: 'novecento', sans-serif;
-   letter-spacing: 2px;
- }
- .fn{
-   font-size:20px;
-   font-style: normal;
-   font-weight: 600;
- }
- .comment-metadata{
-   color:gray;
-   font-size: 18px;
- }
- .reply{
-   font-size:20px;
- }
- a{
-   text-decoration: none;
- }
- .comment-reply-title{
-   font-size: 33px;
-   text-transform: uppercase;
-   font-family: 'novecento', sans-serif;
-   letter-spacing: 2px;
- }
+  .comments-title {
+    font-size: 40px;
+    font-family: 'novecento', sans-serif;
+    letter-spacing: 2px;
+  }
+  .fn {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+  }
+  .comment-metadata {
+    color: gray;
+    font-size: 18px;
+  }
+  .reply {
+    font-size: 20px;
+  }
+  a {
+    text-decoration: none;
+  }
+  .comment-reply-title {
+    font-size: 33px;
+    text-transform: uppercase;
+    font-family: 'novecento', sans-serif;
+    letter-spacing: 2px;
+  }
 }
+
 ///////search///
-.search-content{
+.search-content {
   width: 60%;
   margin-top: 150px;
   margin-right: 30px;
   padding-left: 5%;
-    margin-left: 7%;
+  margin-left: 7%;
   p {
     font-family: 'novecento', sans-serif;
-    //font-size:8px;
     letter-spacing: 2px;
   }
-  h1{
-    font-size:45px;
-    text-transform: uppercase;
-   // margin-left: 14%;
-  }
-
-
-  h1{
+ 
+  h1 {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 45px;
-  
+    border-bottom: 1px dashed #c8c8c8;
+    padding-bottom: 50px;
   }
-  h2{
+  h2 {
     text-transform: uppercase;
     font-family: 'novecento', sans-serif;
     letter-spacing: 2px;
     font-size: 35px;
     padding-top: 40px;
-    a{
+    a {
       text-decoration: none;
       letter-spacing: 2px;
     }
-    }
-    p{
-      font-size: 17px;
-   
-    }
-    .entry-meta{
-      font-family: 'novecento', sans-serif;
-      font-size: 20px;
-    }
+  }
+  p {
+    font-size: 17px;
+  }
+  .entry-meta {
+    font-family: 'novecento', sans-serif;
+    font-size: 20px;
+  }
 }
 
 ////////404//
@@ -451,76 +450,110 @@
   padding-left: 5%;
   p {
     font-family: 'novecento', sans-serif;
-    font-size:20px;
+    font-size: 20px;
     letter-spacing: 2px;
   }
-  h1{
-    font-size:45px;
+  h1 {
+    font-size: 45px;
     text-transform: uppercase;
     margin-left: 14%;
   }
-  .page-content{
+  .page-content {
     margin-left: 14%;
   }
- h2{
-   text-transform: uppercase;
-     font-family: 'novecento', sans-serif;
-     letter-spacing: 2px;
- }
- a{
-   text-decoration: none;
-  
-   }
-
-  li{
+  h2 {
+    text-transform: uppercase;
+    font-family: 'novecento', sans-serif;
+    letter-spacing: 2px;
+  }
+  a {
+    text-decoration: none;
+  }
+  li {
     list-style: none;
-  
-    }
-
-    ul{
-        margin:0;
+  }
+  ul {
+    margin: 0;
     padding: 0;
     line-height: 1.75;
     font-size: 19px;
-    }
-    fieldset{
-      border:none;
-    }
-   
-  
+  }
+  fieldset {
+    border: none;
+  }
 }
 
-
-/////serach-form///
-
-
-.search-form    {
-    color:#248A83 ;
-    fieldset {
-      border: 0;
-      padding-top: 3px;
-    }
-    fieldset .search-field{
-        background:transparent;
-        border:solid 0px transparent;
-        //width:0;
-    }
-    fieldset .new-width{
-        width:170px;
-    }
-    input {
-      text-transform: uppercase;
-    }
-    input:focus {
-      outline: 0;
-    }
-    .fa-search {
-      font-size: 1rem;
-    }
+/////search-form///
+.search-form {
+  color: #248A83;
+  fieldset {
+    border: 0;
+    padding-top: 3px;
+  }
+  fieldset .search-field {
+    background: transparent;
+    border: solid 0px transparent;
+  }
+  fieldset .new-width {
+    width: 170px;
+  }
+  input {
+    text-transform: uppercase;
+  }
+  input:focus {
+    outline: 0;
+  }
+  .fa-search {
+    font-size: 1rem;
+  }
 }
+
 ////taxonimies//
-.content-taxonomy{
-  .content-area{
-    width:100%;
+.content-taxonomy {
+  .content-area {
+    width: 100%;
+    padding-top: 55px;
+    padding-right: 400px;
+    padding-bottom: 60px;
+  }
+  .page-header {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px dashed #c8c8c8;
+  }
+  .page-title {
+    text-transform: uppercase;
+    font-size: 40px;
+  }
+  .archive-area {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    width: 95;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    justify-content: space-around;
+    padding-top:40px;
+    .product-post {
+      width: 25%;
+      border: 10px solid white;
+      img {
+        height: 240px;
+        width: auto;
+        object-fit: cover;
+      }
+      .product-thumbnail {
+        border-color: #e1e1e1;
+        border-width: 1px 1px 5px 1px;
+        border-style: solid;
+        height: 245px;
+      }
+      .product-info {
+        border: 1px solid #e1e1e1;
+        
+      }
+    }
   }
 }

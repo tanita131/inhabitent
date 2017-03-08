@@ -8,11 +8,8 @@ get_header(); ?>
 
     <div id="primary" class="content-front-page">
         <main id="main" class="site-main" role="main">
-
             <div class="main-picture">
-           
             </div>
-
             <section class="shop-stuff-container">
                 <h2>Shop stuff</h2>
                 <div class="shop-stuff">
@@ -25,7 +22,7 @@ get_header(); ?>
            ));
         foreach ($terms as $term) :
           $url = get_term_link( $term->slug , 'product_type');              
-    ?>
+                    ?>
                     <div class="shop-stuff-item">
                         <div class="product-icon-image">
                             <img src="<?php echo get_template_directory_uri();?>/images/product-type-icons/<?php echo $term->slug; ?>.svg" alt="">
