@@ -10,7 +10,7 @@ get_header(); ?>
         <main id="main" class="site-main" role="main">
 
             <div class="main-picture">
-                <h3>test</h3>
+           
             </div>
 
             <section class="shop-stuff-container">

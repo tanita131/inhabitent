@@ -1,11 +1,11 @@
 
 
-(function(jQuery){
- jQuery('.search-field').hide();
+// (function(jQuery){
+//  jQuery('.search-field').hide();
 
-jQuery('.search-submit').click(function(){
-  event.preventDefault();
-  jQuery('.search-field').toggle('slow');
+// jQuery('.search-submit').click(function(){
+//   event.preventDefault();
+//   jQuery('.search-field').toggle('slow');
 
-});
-})(jQuery);
+// });
+// })(jQuery);
