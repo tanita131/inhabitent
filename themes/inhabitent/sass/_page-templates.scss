@@ -294,7 +294,7 @@
     img {
       width: 95%;
     }
-    h2 {
+    h2,h1 {
       position: absolute;
       top: 0;
       left: 0;
@@ -331,18 +331,18 @@
   iframe {
     width: 95%;
   }
-  h2 {
+  h1, h2 {
     font-family: 'novecento', sans-serif;
-    font-size: 40px;
+    font-size: 30px;
   }
   form {
     display: block;
   }
   input {
-    background-color: lightgray;
+    background-color: #f4f4f4;
   }
   textarea {
-    background-color: lightgray;
+    background-color:#f4f4f4 ;
   }
 }
 

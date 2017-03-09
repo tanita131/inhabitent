@@ -39,23 +39,15 @@ get_header(); ?>
             </section>
             <!--shop stuff-container -->
 
-
-
-
-
             <h2>Inhabitent journal</h2>
             <section class="news-feed">
-
-
                 <?php
-       $args = array( 'post_type' => 'post', 'order' => 'DSC', 'numberposts' => 3 );
-       $product_posts = get_posts( $args ); // returns an array of posts
-        ?>
-
+                $args = array( 'post_type' => 'post', 'order' => 'DSC', 'numberposts' => 3 );
+                $product_posts = get_posts( $args ); // returns an array of posts
+                ?>
                     <?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
                     <?php get_template_part( 'template-parts/content-front-page' ); ?>
                     <?php endforeach; wp_reset_postdata(); ?>
-
             </section>
         </main>
         <!-- #main -->

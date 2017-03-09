@@ -985,8 +985,9 @@ object {
   .blog .entry-header img,
   .single-format-standard .entry-header img {
     width: 95%; }
-  .blog .entry-header h2,
-  .single-format-standard .entry-header h2 {
+  .blog .entry-header h2, .blog .entry-header h1,
+  .single-format-standard .entry-header h2,
+  .single-format-standard .entry-header h1 {
     position: absolute;
     top: 0;
     left: 0;
@@ -1014,18 +1015,18 @@ object {
 .page-id-40 iframe {
   width: 95%; }
 
-.page-id-40 h2 {
+.page-id-40 h1, .page-id-40 h2 {
   font-family: 'novecento', sans-serif;
-  font-size: 40px; }
+  font-size: 30px; }
 
 .page-id-40 form {
   display: block; }
 
 .page-id-40 input {
-  background-color: lightgray; }
+  background-color: #f4f4f4; }
 
 .page-id-40 textarea {
-  background-color: lightgray; }
+  background-color: #f4f4f4; }
 
 .blog .entry-meta,
 .single-format-standard .entry-meta {
