@@ -888,7 +888,7 @@ object {
   -ms-flex-pack: justify;
       justify-content: space-between;
   padding-top: 3rem;
-  width: 90%; }
+  width: 95%; }
 
 .product-item {
   max-width: 23%;
@@ -919,7 +919,13 @@ object {
   color: black;
   letter-spacing: 0;
   font-size: 1rem;
-  font-weight: 400; }
+  font-weight: 400;
+  overflow: hidden;
+  white-space: nowrap; }
+
+.post-title-shop h3:after {
+  content: '..............';
+  overflow: hidden; }
 
 .about-hero {
   width: 100vw;
@@ -1169,11 +1175,11 @@ object {
   .search-form .fa-search {
     font-size: 1rem; }
 
-.content-taxonomy .content-area {
-  width: 100%;
+.content-taxonomy .taxonomy-area {
+  width: 80%;
   padding-top: 55px;
-  padding-right: 400px;
-  padding-bottom: 60px; }
+  padding-bottom: 60px;
+  margin-left: 10%; }
 
 .content-taxonomy .page-header {
   text-align: center;
@@ -1203,7 +1209,7 @@ object {
     border: 10px solid white; }
     .content-taxonomy .archive-area .product-post img {
       height: 240px;
-      width: auto;
+      width: 100%;
       object-fit: cover; }
     .content-taxonomy .archive-area .product-post .product-thumbnail {
       border-color: #e1e1e1;
@@ -1212,6 +1218,15 @@ object {
       height: 245px; }
     .content-taxonomy .archive-area .product-post .product-info {
       border: 1px solid #e1e1e1; }
+    .content-taxonomy .archive-area .product-post .archive-title h3 {
+      font-family: 'merriweather', sans-serif;
+      font-weight: lighter;
+      overflow: hidden; }
+    .content-taxonomy .archive-area .product-post .archive-title h3:after {
+      content: '........';
+      overflow: hidden; }
+    .content-taxonomy .archive-area .product-post .taxonomy-description p {
+      font-family: 'merriweather', sans-serif; }
 
 .site-footer {
   width: 100%;

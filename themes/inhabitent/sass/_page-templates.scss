@@ -180,7 +180,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   padding-top: 3rem;
-  width: 90%;
+  width: 95%;
 }
 
 .product-item {
@@ -215,7 +215,16 @@
     letter-spacing: 0;
     font-size: 1rem;
     font-weight: 400;
-  }
+ 
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        h3:after{
+            content: '..............';
+            overflow: hidden;
+        }
+
+
 }
 
 // About Page
@@ -510,11 +519,11 @@
 
 ////taxonimies//
 .content-taxonomy {
-  .content-area {
-    width: 100%;
+  .taxonomy-area {
+    width: 80%;
     padding-top: 55px;
-    padding-right: 400px;
     padding-bottom: 60px;
+    margin-left: 10%;
   }
   .page-header {
     text-align: center;
@@ -526,6 +535,7 @@
     text-transform: uppercase;
     font-size: 40px;
   }
+ 
   .archive-area {
     display: flex;
     flex-wrap: wrap;
@@ -541,7 +551,7 @@
       border: 10px solid white;
       img {
         height: 240px;
-        width: auto;
+        width: 100%;
         object-fit: cover;
       }
       .product-thumbnail {
@@ -553,6 +563,22 @@
       .product-info {
         border: 1px solid #e1e1e1;
         
+      }
+      .archive-title{
+      h3{
+        font-family:'merriweather', sans-serif;
+        font-weight: lighter;
+        overflow: hidden;
+        }
+        h3:after{
+            content: '........';
+            overflow: hidden;
+        }
+      }
+      .taxonomy-description{
+        p{
+       font-family: 'merriweather', sans-serif;
+         }
       }
     }
   }

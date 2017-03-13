@@ -6,7 +6,7 @@
  */
 get_header(); ?>
 	<div class="content-taxonomy">
-		<div id="primary" class="content-area">
+		<div class="taxonomy-area">
 			<?php if ( have_posts() ) : ?>
 			<header class="page-header">
 				<?php $term = get_queried_object(); ?>
@@ -27,13 +27,19 @@ get_header(); ?>
 								<?php the_post_thumbnail( 'large' ); ?>
 							</a>
 						</div>
-
-						<div class="product-info">
-							<p class="archive-title">
-								<?php the_title('<p class="archive-title">'); ?>
-								<?php echo CFS()->get( 'product_price' ); ?>
-							</p>
+                    <div class="product-info">
+						<div class="archive-title">
+							<h3>
+								<?php the_title(); ?>
+							</h3>
 						</div>
+						<p>
+							<?php echo CFS()->get('product_price'); ?>
+						</p>
+					</div>
+
+
+
 					</div>
 					<!-- product-post -->
 					<?php endwhile ?>
@@ -46,7 +52,7 @@ get_header(); ?>
 			<?php endif; ?>
 
 
-		</div>
+	
 		<!-- #primary -->
 
 	</div>
