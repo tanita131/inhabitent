@@ -35,9 +35,7 @@ get_header(); ?>
 
                     <?php endforeach; ?>
                 </div>
-                <!--shop stuff -->
             </section>
-            <!--shop stuff-container -->
 
             <h2>Inhabitent journal</h2>
             <section class="news-feed">
@@ -49,6 +47,25 @@ get_header(); ?>
                     <?php get_template_part( 'template-parts/content-front-page' ); ?>
                     <?php endforeach; wp_reset_postdata(); ?>
             </section>
+
+            <section class="adventures-section">
+                <h2>Latest adventures</h2>
+                <div class="adventures">
+                    <div class="left-box">
+                    </div>
+                    <div class="right-side">
+                        <div class="upper-right-box">
+                        </div>
+                        <div class="bottom-right-section">
+                            <div class="left">
+                            </div>
+                            <div class="right">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
         </main>
         <!-- #main -->
     </div>
